@@ -1,0 +1,10 @@
+sudo iptables -A INPUT -p tcp --dport ssh -j ACCEPT
+sudo iptables -L
+sudo iptables -A INPUT -p tcp --dport http -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport telnet -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport ftp -j ACCEPT
+sudo iptables -A INPUT -j DROP
+sudo iptables -L -v
+sudo iptables -D input 1
+sudo iptables -I INPUT 1 -p icmp -j DROP
+sudo iptables -I INPUT 1 -p icmp -j REJECT
