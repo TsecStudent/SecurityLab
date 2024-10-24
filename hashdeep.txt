@@ -1,7 +1,7 @@
 md5deep fileName.txt
 md5deep *.txt>hashset1.txt
-md5deep -m hashset1.txt *
-md5deep -s -x hashset1.txt *
+md5deep -m hashset1.txt * or hashdeep -m -k hashset1.txt *
+md5deep -s -x hashset1.txt * or hashdeep -s -x hashset1.txt *
 hashdeep -c md5,sha1,sha256 -r /home/khalid/Documents/hashdeep>newHashSet.txt
 hashdeep -a -r -k newHashSet.txt /home/khalid/Documents/hashdeep
 hashdeep -v -a -r -k newHashSet.txt /home/khalid/Documents/hashdeep
