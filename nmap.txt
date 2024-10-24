@@ -1,0 +1,8 @@
+sudo nmap 192.168.1.1
+sudo nmap -O 192.168.1.1
+sudo nmap -sn 192.168.1.1
+sudo nmap -sT 192.168.1.1 (tcp)
+sudo nmap -sU 192.168.1.1 (udp)
+sudo nmap -p 22,443,80 192.168.1.1 (tcp)
+sudo nmap -p 53,67,123 192.168.1.1 (udp)
+sudo nmap -A -p- 192.168.1.1
