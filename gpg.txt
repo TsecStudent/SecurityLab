@@ -1,0 +1,7 @@
+S: gpg --gen-key (Sender, 123)
+R: gpg --gen-key (Receiver, 123)
+R: gpg --export -a "Receiver">Receiver_publickey.asc
+S: gpg --import Receiver_publickey.asc
+S: nano email.txt
+S: gpg --encrypt -r "Receiver" email.txt
+R: gpg --decrypt email.txt.gpg
