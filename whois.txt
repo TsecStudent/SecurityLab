@@ -1,0 +1,21 @@
+sudo whois google.com
+sudo whois -h whois.arin.net 192.0.2.1
+sudo whois -r 192.0.2.1
+
+sudo dig google.com
+sudo dig google.com MX
+sudo dig +short google.com
+
+sudo traceroute google.com
+sudo traceroute -n google.com
+sudo traceroute -T google.com
+
+sudo nslookup google.com
+sudo nslookup -type=MX google.com
+sudo nslookup -type=NS google.com
+
+sudo nikto -h google.com
+
+sudo dmitry -winse google.com
+sudo dmitry -i google.com
+sudo dmitry -o output.txt google.com
