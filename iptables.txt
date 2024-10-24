@@ -8,3 +8,6 @@ sudo iptables -L -v
 sudo iptables -D input 1
 sudo iptables -I INPUT 1 -p icmp -j DROP
 sudo iptables -I INPUT 1 -p icmp -j REJECT
+sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+sudo iptables -A OUTPUT -p icmp -j DROP
+sudo iptables -F
