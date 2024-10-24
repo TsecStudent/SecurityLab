@@ -1,0 +1,7 @@
+sudo tcpdump
+sudo tcpdump -v
+sudo tcpdump -vv
+sudo tcpdump src google.com
+sudo tcpdump src google.com and port 80
+sudo tcpdump dst google.com
+sudo tcpdump src google.com and '(dst portrange 8000-8080)' 
