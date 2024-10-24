@@ -11,3 +11,6 @@ sudo iptables -I INPUT 1 -p icmp -j REJECT
 sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 sudo iptables -A OUTPUT -p icmp -j DROP
 sudo iptables -F
+
+sudo iptables -I INPUT 1 -i lo -j ACCEPT
+Accepting Localhost Traffic: This ensures that traffic on the loopback interface (localhost) is always allowed, which is important for system functionality.
